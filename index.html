@@ -4,6 +4,23 @@
     <title>JazzBen</title>
   </head>
   <body>
-    <h1>Hello, there.</h1>
+    <div class="qr-generator-card">
+  <div class="input-group">
+    <label for="qr-input">Text or URL</label>
+    <input type="text" id="qr-input" placeholder="https://example.com" />
+    <span id="error-msg" class="error">Please enter valid text</span>
+  </div>
+
+  <button id="generate-btn">Generate QR Code</button>
+
+  <div id="qrcode-container">
+    <div id="qrcode"></div>
+  </div>
+
+  <div id="download-section">
+    <button id="dl-png">Download PNG</button>
+    <button id="dl-jpeg">Download JPEG</button>
+  </div>
+</div>
   </body>  
 </html>
